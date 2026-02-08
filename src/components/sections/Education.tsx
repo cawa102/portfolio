@@ -11,7 +11,7 @@ export default function Education() {
         <h2 className="mb-8 font-heading text-3xl font-bold text-text-primary md:text-4xl">
           Education
         </h2>
-        <div className="mx-auto flex max-w-lg flex-col gap-6">
+        <div className="mx-auto grid max-w-4xl grid-cols-1 gap-6 md:grid-cols-2">
           <ScrollAnimation direction="up">
             <div className="flex items-center gap-4 rounded-xl border border-bg-tertiary bg-bg-secondary p-6">
               <GraduationCap className="h-8 w-8 flex-shrink-0 text-accent-cyan" />
