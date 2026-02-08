@@ -15,8 +15,7 @@ export default function About() {
             <p>
               I&apos;m a CyberSecurity Master&apos;s student based in the UK. Over
               the past year, I have intensively built real-world AI-driven
-              applications — not as academic exercises, but as production-minded
-              systems addressing genuine problems and emerging trends.
+              applications as production-minded systems addressing genuine problems and emerging trends.
             </p>
             <p>
               My focus is on maximising the power of AI agents to accelerate
