@@ -18,7 +18,7 @@ export default function Blog() {
             href="https://medium.com/@ccawa102"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block rounded-lg border border-accent-cyan px-6 py-3 text-accent-cyan transition-colors hover:bg-accent-cyan/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-cyan"
+            className="inline-block rounded-lg border border-text-muted px-6 py-3 text-text-primary transition-colors hover:border-text-secondary hover:bg-bg-tertiary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-cyan"
           >
             Read on Medium &rarr;
           </a>

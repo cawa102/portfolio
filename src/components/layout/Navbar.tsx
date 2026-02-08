@@ -59,9 +59,9 @@ export default function Navbar() {
         <a
           href="#hero"
           onClick={(e) => handleNavClick(e, '#hero')}
-          className="bg-gradient-to-r from-accent-cyan to-accent-purple bg-clip-text font-heading text-xl font-bold text-transparent"
+          className="font-heading text-base font-semibold tracking-tight text-text-primary"
         >
-          cawa1
+          Kyosuke Kawai
         </a>
 
         <div className="hidden items-center gap-6 md:flex">

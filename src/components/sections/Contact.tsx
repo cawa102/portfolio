@@ -66,9 +66,9 @@ export default function Contact() {
                 rel="noopener noreferrer"
                 aria-label={`Visit ${link.name}`}
                 variants={shouldReduceMotion ? undefined : itemVariants}
-                className="group flex h-12 w-12 items-center justify-center rounded-full border border-bg-tertiary bg-bg-secondary transition-all hover:scale-110 hover:border-accent-cyan/40 hover:bg-accent-cyan/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-cyan"
+                className="group flex h-12 w-12 items-center justify-center rounded-full border border-bg-tertiary bg-bg-secondary transition-colors duration-200 hover:border-text-muted/50 hover:bg-bg-tertiary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-cyan"
               >
-                <IconComponent className="h-5 w-5 text-text-secondary transition-colors group-hover:text-accent-cyan" />
+                <IconComponent className="h-5 w-5 text-text-secondary transition-colors group-hover:text-text-primary" />
               </motion.a>
             )
           })}

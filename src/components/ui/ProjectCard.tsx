@@ -20,7 +20,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
       href={project.repoUrl}
       target="_blank"
       rel="noopener noreferrer"
-      className="block rounded-xl border border-bg-tertiary bg-bg-secondary p-6 transition-all duration-300 hover:border-accent-cyan/40 hover:shadow-[0_0_20px_rgba(0,212,255,0.15)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-cyan"
+      className="block rounded-xl border border-bg-tertiary bg-bg-secondary p-6 transition-colors duration-200 hover:border-text-muted/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-cyan"
       whileHover={shouldReduceMotion ? undefined : { y: -4 }}
     >
       <div className="mb-3 flex items-start justify-between gap-3">

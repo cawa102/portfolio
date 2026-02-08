@@ -14,7 +14,7 @@ export default function Education() {
         <div className="mx-auto grid max-w-4xl grid-cols-1 gap-6 md:grid-cols-2">
           <ScrollAnimation direction="up">
             <div className="flex items-center gap-4 rounded-xl border border-bg-tertiary bg-bg-secondary p-6">
-              <GraduationCap className="h-8 w-8 flex-shrink-0 text-accent-cyan" />
+              <GraduationCap className="h-8 w-8 flex-shrink-0 text-text-secondary" />
               <div className="text-left">
                 <p className="text-lg font-semibold text-text-primary">
                   Master&apos;s in CyberSecurity
@@ -28,7 +28,7 @@ export default function Education() {
           </ScrollAnimation>
           <ScrollAnimation direction="up" delay={0.15}>
             <div className="flex items-center gap-4 rounded-xl border border-bg-tertiary bg-bg-secondary p-6">
-              <GraduationCap className="h-8 w-8 flex-shrink-0 text-accent-cyan" />
+              <GraduationCap className="h-8 w-8 flex-shrink-0 text-text-secondary" />
               <div className="text-left">
                 <p className="text-lg font-semibold text-text-primary">
                   Bachelor&apos;s of Engineering in Electronics and Mechanical Engineering

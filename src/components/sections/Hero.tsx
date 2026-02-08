@@ -18,12 +18,10 @@ export default function Hero() {
       <ParticleBackgroundLazy />
 
       <div className="relative z-10 mx-auto max-w-4xl px-6 text-center">
-        <h1 className="mb-6 font-heading text-5xl font-bold sm:text-6xl md:text-7xl lg:text-8xl">
+        <h1 className="mb-6 font-heading text-5xl font-bold tracking-tight text-text-primary sm:text-6xl md:text-7xl lg:text-8xl">
           Hi, I&apos;m
           <br />
-          <span className="bg-gradient-to-r from-accent-cyan to-accent-purple bg-clip-text text-transparent">
-            Kyosuke Kawai
-          </span>
+          Kyosuke Kawai
         </h1>
 
         <div className="mb-3 h-10 text-2xl text-text-secondary md:text-3xl">
@@ -44,14 +42,14 @@ export default function Hero() {
           <button
             type="button"
             onClick={() => scrollToSection(SECTION_IDS.projects)}
-            className="rounded-lg bg-gradient-to-r from-accent-cyan to-accent-purple px-8 py-3.5 text-lg font-medium text-white transition-transform hover:scale-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-cyan"
+            className="rounded-lg bg-text-primary px-7 py-3 text-base font-medium text-bg-primary transition-colors hover:bg-text-secondary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-cyan"
           >
             View Projects
           </button>
           <button
             type="button"
             onClick={() => scrollToSection(SECTION_IDS.contact)}
-            className="rounded-lg border border-accent-cyan px-8 py-3.5 text-lg text-accent-cyan transition-colors hover:bg-accent-cyan/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-cyan"
+            className="rounded-lg border border-text-muted px-7 py-3 text-base font-medium text-text-primary transition-colors hover:border-text-secondary hover:bg-bg-tertiary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-cyan"
           >
             Contact Me
           </button>
@@ -59,7 +57,7 @@ export default function Hero() {
       </div>
 
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2">
-        <ChevronDown className="h-6 w-6 animate-bounce text-text-muted" />
+        <ChevronDown className="h-5 w-5 text-text-muted/40" />
       </div>
     </section>
   )

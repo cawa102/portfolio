@@ -1,7 +1,7 @@
 export const SITE_CONFIG = {
-  name: 'cawa1',
+  name: 'Kyosuke Kawai',
   fullName: 'Kyosuke Kawai',
-  title: 'cawa1 | AI Agent Developer & Security Engineer',
+  title: 'Kyosuke Kawai | AI Agent Developer & Security Engineer',
   description:
     'Portfolio of Kyosuke Kawai — building production-grade AI-driven applications with security at the core.',
   url: 'https://cawa1.dev',

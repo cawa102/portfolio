@@ -26,7 +26,7 @@ function MarqueeRow({
         {items.map((skill, i) => (
           <span
             key={`${skill}-${i}`}
-            className="whitespace-nowrap rounded-full border border-bg-tertiary bg-bg-secondary px-5 py-2.5 text-sm font-medium text-text-primary transition-all duration-300 hover:border-accent-cyan/60 hover:shadow-[0_0_15px_rgba(0,212,255,0.15)] hover:text-accent-cyan"
+            className="whitespace-nowrap rounded-full border border-bg-tertiary bg-bg-secondary px-5 py-2.5 text-sm font-medium text-text-secondary transition-colors duration-200 hover:border-text-muted/40 hover:text-text-primary"
           >
             {skill}
           </span>
@@ -68,7 +68,7 @@ export default function Skills() {
               viewport={{ once: true, amount: 0.5 }}
               transition={{ duration: 0.6 }}
             >
-              <p className="mb-1 text-xs font-medium uppercase tracking-widest text-accent-cyan/70">
+              <p className="mb-2 text-xs font-medium uppercase tracking-widest text-text-muted">
                 {row.label}
               </p>
               <MarqueeRow
