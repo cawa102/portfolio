@@ -45,3 +45,10 @@ next-env.d.ts
 
 # claude code
 .claude/
+CLAUDE.md
+spec.md
+docs/
+
+# e2e / playwright
+e2e/
+playwright.config.ts
