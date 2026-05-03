@@ -9,6 +9,7 @@ type SectionOverlayProps = {
   id: string;
   sectionIndex: number;
   align?: SectionAlign;
+  widthClass?: string;
   children: ReactNode;
 };
 
@@ -22,6 +23,7 @@ export default function SectionOverlay({
   id,
   sectionIndex,
   align = "left",
+  widthClass = "max-w-3xl",
   children,
 }: SectionOverlayProps) {
   const ref = useRef<HTMLElement | null>(null);
@@ -46,7 +48,7 @@ export default function SectionOverlay({
     >
       <motion.div
         style={{ opacity, y }}
-        className="relative z-10 w-full max-w-3xl rounded-3xl bg-cream-50/85 p-8 shadow-soft backdrop-blur-md sm:p-10 lg:p-12"
+        className={`text-readable relative z-10 w-full ${widthClass}`}
       >
         {children}
       </motion.div>

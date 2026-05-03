@@ -41,10 +41,10 @@ export default function Contact() {
   return (
     <SectionOverlay id={SECTION_IDS.contact} sectionIndex={6} align="center">
       <div className="text-center">
-        <h2 className="mb-3 font-display text-3xl font-bold text-warm-text md:text-4xl">
+        <h2 className="mb-3 font-display text-3xl font-bold text-cream-50 md:text-4xl">
           Get in Touch
         </h2>
-        <p className="mb-10 text-warm-text-light">
+        <p className="mb-10 text-white">
           Feel free to reach out for collaboration or opportunities
         </p>
 
@@ -67,7 +67,7 @@ export default function Contact() {
                 rel="noopener noreferrer"
                 aria-label={`Visit ${link.name}`}
                 variants={shouldReduceMotion ? undefined : itemVariants}
-                className="group flex h-12 w-12 items-center justify-center rounded-full border border-cream-200 bg-cream-50 shadow-soft transition-all duration-200 hover:-translate-y-1 hover:border-golden focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-golden"
+                className="text-shadow-none group flex h-12 w-12 items-center justify-center rounded-full border border-cream-200 bg-cream-50 shadow-soft transition-all duration-200 hover:-translate-y-1 hover:border-golden focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-golden"
               >
                 <IconComponent className="h-5 w-5 text-warm-text-light transition-colors group-hover:text-warm-text" />
               </motion.a>
@@ -75,7 +75,7 @@ export default function Contact() {
           })}
         </motion.div>
 
-        <p className="mt-12 text-xs text-warm-text-light/70">
+        <p className="mt-12 text-xs text-white/80">
           &copy; 2026 Kyosuke Kawai
         </p>
       </div>

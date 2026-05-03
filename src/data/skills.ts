@@ -9,7 +9,7 @@ export const SKILL_CATEGORIES: readonly SkillCategory[] = [
   { name: 'Backend', skills: ['Node.js', 'Supabase', 'PostgreSQL'] },
   {
     name: 'AI / LLM',
-    skills: ['Claude Code', 'MCP', 'Multi-Agent Orchestration'],
+    skills: ['Claude Code', 'MCP', 'Multi-Agent Orchestration', 'Harness Engineering'],
   },
   {
     name: 'Security',

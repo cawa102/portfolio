@@ -2,7 +2,6 @@ import type { Metadata } from 'next'
 import { Inter, Space_Grotesk, JetBrains_Mono } from 'next/font/google'
 import Navbar from '@/components/layout/Navbar'
 import Background from '@/components/world/Background'
-import Character from '@/components/world/Character'
 import { SITE_CONFIG } from '@/lib/constants'
 import './globals.css'
 
@@ -87,6 +86,12 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
+        <script
+          dangerouslySetInnerHTML={{
+            __html:
+              "if (typeof history !== 'undefined' && 'scrollRestoration' in history) { history.scrollRestoration = 'manual'; }",
+          }}
+        />
       </head>
       <body
         className={`${inter.variable} ${spaceGrotesk.variable} ${jetbrainsMono.variable} antialiased text-warm-text`}
@@ -102,7 +107,6 @@ export default function RootLayout({
         <main id="main-content" className="relative z-20">
           {children}
         </main>
-        <Character />
       </body>
     </html>
   )

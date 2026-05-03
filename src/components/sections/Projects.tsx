@@ -26,16 +26,21 @@ export default function Projects() {
   const shouldReduceMotion = useReducedMotion()
 
   return (
-    <SectionOverlay id={SECTION_IDS.projects} sectionIndex={2} align="right">
-      <h2 className="mb-3 font-display text-3xl font-bold text-warm-text md:text-4xl">
+    <SectionOverlay
+      id={SECTION_IDS.projects}
+      sectionIndex={2}
+      align="center"
+      widthClass="max-w-6xl"
+    >
+      <h2 className="mb-3 text-center font-display text-3xl font-bold text-cream-50 md:text-4xl">
         Projects
       </h2>
-      <p className="mb-8 text-warm-text-light">
+      <p className="mb-8 text-center text-white">
         Open-source tools built at the intersection of AI and security
       </p>
 
       <motion.div
-        className="grid grid-cols-1 gap-5 md:grid-cols-2"
+        className="grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-4"
         variants={shouldReduceMotion ? undefined : containerVariants}
         initial="hidden"
         whileInView="visible"
@@ -44,6 +49,7 @@ export default function Projects() {
         {PROJECTS.map((project) => (
           <motion.div
             key={project.title}
+            className="h-full"
             variants={shouldReduceMotion ? undefined : itemVariants}
           >
             <ProjectCard project={project} />

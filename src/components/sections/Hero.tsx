@@ -12,13 +12,13 @@ export default function Hero() {
   return (
     <SectionOverlay id={SECTION_IDS.hero} sectionIndex={0} align="center">
       <div className="text-center">
-        <h1 className="mb-6 font-display text-4xl font-bold tracking-tight text-warm-text sm:text-5xl md:text-6xl lg:text-7xl">
+        <h1 className="mb-6 font-display text-4xl font-bold tracking-tight text-cream-50 sm:text-5xl md:text-6xl lg:text-7xl">
           Hi, I&apos;m
           <br />
           Kyosuke Kawai
         </h1>
 
-        <div className="mb-3 h-10 text-2xl text-warm-text-light md:text-3xl">
+        <div className="mb-3 h-10 text-2xl text-white md:text-3xl">
           <TypingEffect
             phrases={TYPING_CONFIG.phrases}
             typingSpeed={TYPING_CONFIG.typingSpeed}
@@ -28,7 +28,7 @@ export default function Hero() {
           />
         </div>
 
-        <p className="mb-10 text-lg text-warm-text-light md:text-xl">
+        <p className="mb-10 text-lg text-white md:text-xl">
           Master&apos;s Student in CyberSecurity — Based in UK
         </p>
 
@@ -36,14 +36,14 @@ export default function Hero() {
           <button
             type="button"
             onClick={() => scrollToSection(SECTION_IDS.projects)}
-            className="rounded-full bg-warm-text px-7 py-3 text-base font-medium text-cream-50 shadow-soft transition-colors hover:bg-warm-text-light focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-golden"
+            className="text-shadow-none rounded-full bg-golden px-7 py-3 text-base font-medium text-warm-text shadow-soft transition-colors hover:bg-noon focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-golden focus-visible:ring-offset-2 focus-visible:ring-offset-transparent"
           >
             View Projects
           </button>
           <button
             type="button"
             onClick={() => scrollToSection(SECTION_IDS.contact)}
-            className="rounded-full border border-warm-text/30 bg-cream-50/60 px-7 py-3 text-base font-medium text-warm-text transition-colors hover:border-warm-text hover:bg-cream-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-golden"
+            className="rounded-full border border-cream-50/70 bg-transparent px-7 py-3 text-base font-medium text-cream-50 transition-colors hover:border-cream-50 hover:bg-cream-50/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cream-50"
           >
             Contact Me
           </button>
