@@ -11,6 +11,24 @@
   --accent-purple: #7c3aed;
   --accent-green: #22c55e;
   --accent-amber: #f59e0b;
+
+  /* Pixar warm-tone palette */
+  --cream-50: #fbf6ee;
+  --cream-100: #f5ecdb;
+  --cream-200: #ecdcc1;
+
+  /* Time-of-day accents (dawn → noon → golden → magic-hour → dusk) */
+  --dawn: #f4a98a;
+  --noon: #fde7a4;
+  --golden: #f0a851;
+  --magic-hour: #e07d57;
+  --dusk: #6f4e8b;
+
+  --warm-text: #3a2a1f;
+  --warm-text-light: #6b5544;
+
+  --shadow-soft: 0 18px 40px -20px rgba(58, 42, 31, 0.35),
+                 0 6px 12px -6px rgba(58, 42, 31, 0.18);
 }
 
 @theme inline {
@@ -24,7 +42,22 @@
   --color-accent-purple: var(--accent-purple);
   --color-accent-green: var(--accent-green);
   --color-accent-amber: var(--accent-amber);
+
+  --color-cream-50: var(--cream-50);
+  --color-cream-100: var(--cream-100);
+  --color-cream-200: var(--cream-200);
+  --color-dawn: var(--dawn);
+  --color-noon: var(--noon);
+  --color-golden: var(--golden);
+  --color-magic-hour: var(--magic-hour);
+  --color-dusk: var(--dusk);
+  --color-warm-text: var(--warm-text);
+  --color-warm-text-light: var(--warm-text-light);
+
+  --shadow-soft: var(--shadow-soft);
+
   --font-sans: var(--font-inter);
+  --font-display: var(--font-space-grotesk);
   --font-heading: var(--font-space-grotesk);
   --font-mono: var(--font-jetbrains-mono);
 }
@@ -34,8 +67,8 @@ html {
 }
 
 body {
-  background: var(--bg-primary);
-  color: var(--text-primary);
+  background: var(--cream-100);
+  color: var(--warm-text);
   font-family: var(--font-sans), system-ui, sans-serif;
 }
 
