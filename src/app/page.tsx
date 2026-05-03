@@ -8,7 +8,7 @@ import Contact from '@/components/sections/Contact'
 
 export default function Home() {
   return (
-    <>
+    <div className="relative w-full">
       <Hero />
       <About />
       <Projects />
@@ -16,6 +16,6 @@ export default function Home() {
       <Education />
       <Blog />
       <Contact />
-    </>
+    </div>
   )
 }

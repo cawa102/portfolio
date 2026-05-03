@@ -1,7 +1,8 @@
 import type { Metadata } from 'next'
 import { Inter, Space_Grotesk, JetBrains_Mono } from 'next/font/google'
 import Navbar from '@/components/layout/Navbar'
-import Footer from '@/components/layout/Footer'
+import Background from '@/components/world/Background'
+import Character from '@/components/world/Character'
 import { SITE_CONFIG } from '@/lib/constants'
 import './globals.css'
 
@@ -68,23 +69,40 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <link
+          rel="preload"
+          as="video"
+          href="/world/master.mp4"
+          type="video/mp4"
+          media="(min-width: 769px) and (prefers-reduced-motion: no-preference)"
+        />
+        <link
+          rel="preload"
+          as="image"
+          href="/world/panorama.webp"
+          type="image/webp"
+          media="(max-width: 768px), (prefers-reduced-motion: reduce)"
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
       <body
-        className={`${inter.variable} ${spaceGrotesk.variable} ${jetbrainsMono.variable} antialiased`}
+        className={`${inter.variable} ${spaceGrotesk.variable} ${jetbrainsMono.variable} antialiased text-warm-text`}
       >
         <a
           href="#main-content"
-          className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-lg focus:bg-accent-cyan focus:px-4 focus:py-2 focus:text-bg-primary focus:outline-none"
+          className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-lg focus:bg-warm-text focus:px-4 focus:py-2 focus:text-cream-50 focus:outline-none"
         >
           Skip to main content
         </a>
+        <Background />
         <Navbar />
-        <main id="main-content">{children}</main>
-        <Footer />
+        <main id="main-content" className="relative z-20">
+          {children}
+        </main>
+        <Character />
       </body>
     </html>
   )
