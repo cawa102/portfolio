@@ -1,29 +1,25 @@
 'use client'
 
-import ScrollAnimation from '@/components/ui/ScrollAnimation'
+import SectionOverlay from '@/components/world/SectionOverlay'
 import { SECTION_IDS } from '@/lib/constants'
 
 export default function Blog() {
   return (
-    <section id={SECTION_IDS.blog} className="py-20 px-4 md:px-6">
-      <div className="mx-auto max-w-6xl text-center">
-        <h2 className="mb-8 font-heading text-3xl font-bold text-text-primary md:text-4xl">
-          Blog
-        </h2>
-        <ScrollAnimation direction="up">
-          <p className="mb-8 text-text-secondary">
-            I write about AI, security, and software engineering on Medium
-          </p>
-          <a
-            href="https://medium.com/@ccawa102"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block rounded-lg border border-text-muted px-6 py-3 text-text-primary transition-colors hover:border-text-secondary hover:bg-bg-tertiary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-cyan"
-          >
-            Read on Medium &rarr;
-          </a>
-        </ScrollAnimation>
-      </div>
-    </section>
+    <SectionOverlay id={SECTION_IDS.blog} sectionIndex={5} align="left">
+      <h2 className="mb-4 font-display text-3xl font-bold text-warm-text md:text-4xl">
+        Blog
+      </h2>
+      <p className="mb-6 text-warm-text-light">
+        I write about AI, security, and software engineering on Medium
+      </p>
+      <a
+        href="https://medium.com/@ccawa102"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-flex items-center gap-2 rounded-full border border-warm-text/30 bg-cream-50 px-6 py-3 font-medium text-warm-text shadow-sm transition-colors hover:border-golden hover:bg-noon/30 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-golden"
+      >
+        Read on Medium &rarr;
+      </a>
+    </SectionOverlay>
   )
 }
